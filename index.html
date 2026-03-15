@@ -1,381 +1,736 @@
 <!DOCTYPE html>
-<html lang="uz" class="scroll-smooth">
-
+<html lang="uz">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Monetag (o'zgarmadi) -->
-  
-
-  <!-- ✅ SEO: Title + Description -->
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Lawinate.uz — Yuridik Kelajak Platformasi | Testlar, Kutubxona, Reyting, AI Assistant</title>
-  <meta name="description"
-    content="Lawinate.uz — talabalar va abituriyentlar uchun huquqiy ta’lim platformasi: testlar, imtihon savol-javoblari, smart kutubxona, reyting va AI Assistant." />
-
-  <!-- ✅ SEO: Canonical -->
-  <link rel="canonical" href="https://lawinate.uz/" />
-
-  <!-- ✅ SEO: Robots -->
-  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
-  <meta name="googlebot" content="index,follow,max-image-preview:large" />
-
-  <!-- ✅ Language + Geo -->
-  <meta http-equiv="content-language" content="uz" />
-  <meta name="geo.region" content="UZ" />
-  <meta name="geo.placename" content="Uzbekistan" />
-
-  <!-- ✅ Theme -->
-  <meta name="theme-color" content="#0066FF" />
-
-  <!-- Favicon -->
-<link rel="icon" type="image/jpeg" href="/logolaw.jpg">
-<link rel="apple-touch-icon" href="/logolaw.jpg">
-
-  <!-- ✅ Open Graph -->
-  <meta property="og:site_name" content="Lawinate.uz">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Lawinate.uz — Yuridik Kelajak Platformasi">
-  <meta property="og:description"
-    content="Testlar, imtihon savol-javoblari, smart kutubxona, reyting va AI Assistant — barchasi bitta platformada.">
-  <meta property="og:url" content="https://lawinate.uz/">
-  <meta property="og:image" content="https://lawinate.uz/og-cover.jpg">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:locale" content="uz_UZ">
-
-  <!-- ✅ Twitter/X -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Lawinate.uz — Yuridik Kelajak Platformasi">
-  <meta name="twitter:description" content="Huquqiy testlar, kutubxona, reyting va AI Assistant.">
-  <meta name="twitter:image" content="https://lawinate.uz/og-cover.jpg">
-
-  <!-- ✅ Preconnect -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="description" content="Lawinate.uz — talabalar va abituriyentlar uchun huquqiy ta'lim platformasi: testlar, imtihon savol-javoblari, smart kutubxona, reyting va AI Assistant."/>
+  <link rel="canonical" href="https://lawinate.uz/"/>
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"/>
+  <meta name="googlebot" content="index,follow,max-image-preview:large"/>
+  <meta http-equiv="content-language" content="uz"/>
+  <meta name="geo.region" content="UZ"/>
+  <meta name="geo.placename" content="Uzbekistan"/>
+  <meta name="theme-color" content="#EDE8DF"/>
+  <link rel="icon" type="image/jpeg" href="/logolaw.jpg"/>
+  <link rel="apple-touch-icon" href="/logolaw.jpg"/>
+  <meta property="og:site_name" content="Lawinate.uz"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="Lawinate.uz — Yuridik Kelajak Platformasi"/>
+  <meta property="og:description" content="Testlar, imtihon savol-javoblari, smart kutubxona, reyting va AI Assistant — barchasi bitta platformada."/>
+  <meta property="og:url" content="https://lawinate.uz/"/>
+  <meta property="og:image" content="https://lawinate.uz/og-cover.jpg"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+  <meta property="og:locale" content="uz_UZ"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Lawinate.uz — Yuridik Kelajak Platformasi"/>
+  <meta name="twitter:description" content="Huquqiy testlar, kutubxona, reyting va AI Assistant."/>
+  <meta name="twitter:image" content="https://lawinate.uz/og-cover.jpg"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,600;1,6..72,300;1,6..72,400;1,6..72,600&family=DM+Serif+Display:ital@0;1&family=Inconsolata:wght@300;400;600&display=swap" rel="stylesheet"/>
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
-
-  <!-- Cloudflare Web Analytics -->
-  <script defer src='https://static.cloudflareinsights.com/beacon.min.js'
-    data-cf-beacon='{"token":"58db17dfbaa943a2b8c6c7e895c112d3"}'></script>
-  <!-- End Cloudflare Web Analytics -->
-
-  <!-- ✅ Structured data -->
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"58db17dfbaa943a2b8c6c7e895c112d3"}'></script>
   <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "Organization",
-          "@id": "https://lawinate.uz/#organization",
-          "name": "Lawinate.uz",
-          "url": "https://lawinate.uz/",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://lawinate.uz/logo.png"
-          },
-          "sameAs": [
-            "https://t.me/your_channel",
-            "https://instagram.com/your_page",
-            "https://linkedin.com/company/your_page"
-          ]
-        },
-        {
-          "@type": "WebSite",
-          "@id": "https://lawinate.uz/#website",
-          "url": "https://lawinate.uz/",
-          "name": "Lawinate.uz",
-          "publisher": {
-            "@id": "https://lawinate.uz/#organization"
-          },
-          "inLanguage": "uz",
-          "potentialAction": {
-            "@type": "SearchAction",
-            "target": "https://lawinate.uz/kutubxona.html?q={search_term_string}",
-            "query-input": "required name=search_term_string"
-          }
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://lawinate.uz/#webpage",
-          "url": "https://lawinate.uz/",
-          "name": "Lawinate.uz — Yuridik Kelajak Platformasi",
-          "isPartOf": {
-            "@id": "https://lawinate.uz/#website"
-          },
-          "about": {
-            "@id": "https://lawinate.uz/#organization"
-          },
-          "inLanguage": "uz",
-          "description": "Talabalar va abituriyentlar uchun huquqiy ta’lim platformasi: testlar, savol-javoblar, kutubxona, reyting va AI Assistant."
-        }
-      ]
-    }
+  {"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://lawinate.uz/#organization","name":"Lawinate.uz","url":"https://lawinate.uz/","logo":{"@type":"ImageObject","url":"https://lawinate.uz/logo.png"},"sameAs":["https://t.me/your_channel","https://instagram.com/your_page"]},{"@type":"WebSite","@id":"https://lawinate.uz/#website","url":"https://lawinate.uz/","name":"Lawinate.uz","publisher":{"@id":"https://lawinate.uz/#organization"},"inLanguage":"uz","potentialAction":{"@type":"SearchAction","target":"https://lawinate.uz/kutubxona.html?q={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"WebPage","@id":"https://lawinate.uz/#webpage","url":"https://lawinate.uz/","name":"Lawinate.uz — Yuridik Kelajak Platformasi","isPartOf":{"@id":"https://lawinate.uz/#website"},"about":{"@id":"https://lawinate.uz/#organization"},"inLanguage":"uz","description":"Talabalar va abituriyentlar uchun huquqiy ta'lim platformasi."}]}
   </script>
 
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['Inter', 'sans-serif'],
-          },
-          colors: {
-            lawBlue: '#0066FF',
-            lawDark: '#050505',
-            lawCard: '#0F1115',
-          }
-        }
-      }
-    }
-  </script>
+<style>
+:root {
+  --paper:  #EDE8DF;
+  --ink:    #160F05;
+  --amber:  #9A6B00;
+  --amber2: #F0DDA0;
+  --rule:   #B0A898;
+  --faint:  #D8D2C6;
+  --serif:  'DM Serif Display', Georgia, serif;
+  --body:   'Newsreader', Georgia, serif;
+  --code:   'Inconsolata', monospace;
+}
 
-  <style>
-    body {
-      background-color: #050505;
-      color: white;
-      background-image:
-        radial-gradient(circle at 20% 20%, rgba(0, 102, 255, 0.15) 0%, transparent 40%),
-        radial-gradient(circle at 80% 80%, rgba(0, 102, 255, 0.1) 0%, transparent 40%);
-    }
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--body);
+  overflow-x: hidden;
+  cursor: none;
+  -webkit-font-smoothing: antialiased;
+}
+a { color:inherit; text-decoration:none; }
+button { font-family:var(--code); cursor:none; }
 
-    .glass-nav {
-      background: rgba(5, 5, 5, 0.7);
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-    }
+/* ── cursor ── */
+#cur {
+  position:fixed; z-index:9999; pointer-events:none;
+  width:12px; height:12px;
+  border:1.5px solid var(--amber);
+  transform:translate(-50%,-50%);
+  transition:width .18s, height .18s, background .18s;
+}
+#cur.fill { background:var(--amber); }
 
-    .glass-card {
-      background: rgba(15, 17, 21, 0.6);
-      backdrop-filter: blur(10px);
-      border: 1px solid rgba(255, 255, 255, 0.05);
-      transition: all 0.3s ease;
-    }
+/* ═══════════════════════════════════
+   MASTHEAD  (newspaper top bar)
+═══════════════════════════════════ */
+header {
+  border-bottom: 3px double var(--ink);
+  padding: 0 48px;
+  background: var(--paper);
+  position: sticky; top:0; z-index:800;
+}
 
-    .glass-card:hover {
-      transform: translateY(-5px);
-      border-color: rgba(0, 102, 255, 0.3);
-      box-shadow: 0 10px 40px -10px rgba(0, 102, 255, 0.2);
-    }
+.mast-top {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 10px 0 8px;
+  border-bottom: 1px solid var(--rule);
+}
+.mast-top-left, .mast-top-right {
+  font-family: var(--code);
+  font-size: 9px; letter-spacing:.12em; text-transform:uppercase; color:var(--rule);
+  display:flex; align-items:center; gap:20px;
+}
+.mast-live {
+  display:flex; align-items:center; gap:6px;
+  color:var(--amber); font-weight:600;
+}
+.live-dot { width:5px; height:5px; background:#22C55E; border-radius:50%; animation:blink 1.5s infinite; }
+@keyframes blink { 0%,100%{opacity:1}50%{opacity:.15} }
 
-    .text-gradient {
-      background: linear-gradient(to right, #fff, #0066FF);
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-  </style>
+/* big nameplate */
+.nameplate {
+  text-align:center; padding:14px 0 10px;
+  border-bottom: 1px solid var(--rule);
+  position:relative;
+}
+.nameplate-name {
+  font-family: var(--serif);
+  font-size: clamp(52px, 8vw, 96px);
+  font-weight: 400; letter-spacing: -.01em; line-height:1;
+  color: var(--ink);
+}
+.nameplate-name em { font-style:italic; color:var(--amber); }
+.nameplate-rule {
+  display:flex; align-items:center; gap:12px;
+  justify-content:center; margin-top:6px;
+  font-family:var(--code); font-size:8px; letter-spacing:.2em;
+  text-transform:uppercase; color:var(--rule);
+}
+.nameplate-rule::before,
+.nameplate-rule::after {
+  content:''; flex:1; max-width:160px; height:1px; background:var(--rule);
+}
+
+/* nav row */
+.mast-nav {
+  display:flex; align-items:center; justify-content:space-between;
+  padding: 7px 0;
+}
+.mast-nav-links {
+  display:flex; align-items:center; gap:0; list-style:none;
+}
+.mast-nav-links a {
+  font-family:var(--code); font-size:9.5px; letter-spacing:.14em; text-transform:uppercase;
+  color:var(--ink); padding:5px 16px;
+  border-right: 1px solid var(--faint);
+  transition:background .15s, color .15s;
+}
+.mast-nav-links a:first-child { border-left:1px solid var(--faint); }
+.mast-nav-links a:hover { background:var(--ink); color:var(--paper); }
+.mast-nav-links .ai-link {
+  color:var(--amber); font-weight:600; display:flex; align-items:center; gap:5px;
+}
+.mast-nav-links .ai-link:hover { background:var(--amber); color:var(--paper); }
+
+.mast-nav-auth {
+  display:flex; align-items:center; gap:0;
+}
+.auth-in {
+  font-family:var(--code); font-size:9px; letter-spacing:.14em; text-transform:uppercase;
+  background:none; color:var(--rule); border:1px solid var(--faint);
+  padding:6px 18px; transition:color .15s, border-color .15s;
+}
+.auth-in:hover { color:var(--ink); border-color:var(--ink); }
+.auth-reg {
+  font-family:var(--code); font-size:9px; letter-spacing:.14em; text-transform:uppercase;
+  font-weight:600; background:var(--ink); color:var(--paper);
+  border:1px solid var(--ink); padding:6px 20px; margin-left:8px;
+  transition:background .18s;
+}
+.auth-reg:hover { background:var(--amber); border-color:var(--amber); }
+
+.mob-burger {
+  display:none;
+  font-size:20px; background:none; border:1px solid var(--faint);
+  color:var(--ink); padding:4px 10px;
+}
+
+/* ═══════════════════════════════════
+   MOBILE MENU
+═══════════════════════════════════ */
+#mob-menu {
+  display:none; position:fixed; inset:0; z-index:700;
+  background:var(--paper);
+  flex-direction:column; align-items:center; justify-content:center; gap:0;
+  transform:translateY(-100%);
+  transition:transform .5s cubic-bezier(.76,0,.24,1);
+}
+#mob-menu.open { transform:translateY(0); }
+#mob-menu a {
+  font-family:var(--serif);
+  font-size:clamp(40px,10vw,68px); font-style:italic;
+  color:var(--faint); letter-spacing:-.02em;
+  padding:16px 0; text-align:center; width:100%;
+  border-bottom:1px solid var(--faint);
+  transition:color .18s;
+}
+#mob-menu a:hover { color:var(--ink); }
+#mob-menu .m-ai { color:var(--amber); }
+#mob-menu .m-cta {
+  margin-top:32px; font-family:var(--code);
+  font-size:10px; letter-spacing:.18em; text-transform:uppercase; font-weight:600;
+  background:var(--ink); color:var(--paper); border:none; padding:16px 44px;
+}
+
+/* ═══════════════════════════════════
+   BROADSHEET BODY
+═══════════════════════════════════ */
+.broadsheet {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 48px;
+}
+
+/* ── DATELINE ── */
+.dateline {
+  display:flex; align-items:center; justify-content:space-between;
+  padding: 18px 0;
+  border-bottom: 2px solid var(--ink);
+  font-family:var(--code); font-size:9px; letter-spacing:.14em;
+  text-transform:uppercase; color:var(--rule);
+}
+.dateline-badge {
+  display:flex; align-items:center; gap:8px;
+  border:1px solid var(--amber); padding:4px 12px;
+  color:var(--amber); font-weight:600;
+}
+
+/* ── FRONT PAGE GRID ──
+   Left: massive pull-quote headline (5 cols)
+   Middle: divider (hairline)
+   Right: secondary columns (3 cols)
+*/
+.front-page {
+  display: grid;
+  grid-template-columns: 5fr 1px 3fr;
+  gap: 0;
+  padding: 40px 0;
+  border-bottom: 2px solid var(--ink);
+}
+
+.col-divider { background:var(--ink); margin:0 36px; }
+
+/* Left: feature story */
+.story-main {
+  padding-right: 36px;
+}
+.story-kicker {
+  font-family:var(--code); font-size:9px; letter-spacing:.22em; text-transform:uppercase;
+  color:var(--amber); margin-bottom:20px;
+  display:flex; align-items:center; gap:10px;
+}
+.story-kicker::after { content:''; flex:1; height:1px; background:var(--amber); max-width:60px; }
+
+.story-headline {
+  font-family:var(--serif);
+  font-size:clamp(48px, 6.5vw, 88px);
+  font-weight:400; line-height:.95; letter-spacing:-.02em;
+  margin-bottom:28px;
+}
+.story-headline em { font-style:italic; display:block; }
+
+.story-deck {
+  font-size:16px; font-style:italic; font-weight:300; line-height:1.55;
+  color:#4A3F2F;
+  border-left:3px solid var(--amber); padding-left:20px;
+  margin-bottom:36px;
+}
+
+.story-body {
+  column-count:2; column-gap:28px;
+  font-size:13.5px; line-height:1.75; color:#3A3020;
+  margin-bottom:36px;
+}
+.story-body p + p { margin-top:10px; }
+.story-body .drop-cap::first-letter {
+  font-family:var(--serif); font-size:4em; font-weight:400;
+  float:left; line-height:.8; margin:4px 8px 0 0;
+  color:var(--amber);
+}
+
+.story-cta-row {
+  display:flex; align-items:center; gap:16px;
+  padding-top:24px; border-top:1px solid var(--faint);
+}
+.cta-primary {
+  font-family:var(--code); font-size:10px; letter-spacing:.16em; text-transform:uppercase;
+  font-weight:600; background:var(--ink); color:var(--paper);
+  border:1.5px solid var(--ink); padding:13px 36px;
+  display:inline-flex; align-items:center; gap:8px;
+  transition:background .18s, border-color .18s;
+}
+.cta-primary:hover { background:var(--amber); border-color:var(--amber); }
+.cta-ghost {
+  font-family:var(--code); font-size:10px; letter-spacing:.16em; text-transform:uppercase;
+  background:none; color:var(--rule); border:1.5px solid var(--faint);
+  padding:13px 28px; display:inline-flex; align-items:center; gap:8px;
+  transition:color .18s, border-color .18s;
+}
+.cta-ghost:hover { color:var(--ink); border-color:var(--ink); }
+
+/* Right: secondary sidebar */
+.sidebar {
+  display:flex; flex-direction:column; gap:0;
+}
+
+/* stats as boxed advertisements */
+.sidebar-stats {
+  display:flex; flex-direction:column; gap:0;
+  border:1.5px solid var(--ink); margin-bottom:28px;
+}
+.sidebar-stats-head {
+  background:var(--ink); color:var(--paper);
+  font-family:var(--code); font-size:8.5px; letter-spacing:.22em; text-transform:uppercase;
+  text-align:center; padding:7px;
+}
+.stat-item {
+  padding:18px 24px;
+  border-bottom:1px solid var(--faint);
+  display:flex; align-items:baseline; justify-content:space-between;
+}
+.stat-item:last-child { border-bottom:none; }
+.stat-label { font-family:var(--code); font-size:9px; letter-spacing:.12em; text-transform:uppercase; color:var(--rule); }
+.stat-value { font-family:var(--serif); font-size:36px; font-weight:400; letter-spacing:-.02em; }
+.stat-value em { font-style:normal; color:var(--amber); font-size:18px; }
+
+/* sidebar news items */
+.sidebar-item {
+  padding:20px 0;
+  border-bottom:1px solid var(--faint);
+}
+.sidebar-item:last-child { border-bottom:none; }
+.si-num {
+  font-family:var(--code); font-size:8.5px; letter-spacing:.1em; color:var(--rule);
+  margin-bottom:6px;
+}
+.si-head {
+  font-family:var(--serif); font-size:19px; font-weight:400; line-height:1.15;
+  margin-bottom:8px; letter-spacing:-.01em;
+}
+.si-head em { font-style:italic; color:var(--amber); }
+.si-body { font-size:12.5px; line-height:1.65; color:#5A4F3F; }
+.si-link {
+  display:inline-flex; align-items:center; gap:6px; margin-top:10px;
+  font-family:var(--code); font-size:9px; letter-spacing:.12em; text-transform:uppercase;
+  color:var(--amber); transition:gap .18s;
+}
+.si-link:hover { gap:10px; }
+
+/* ── SECTION RULE ── */
+.section-rule {
+  display:flex; align-items:center; gap:0;
+  border-top:2px solid var(--ink);
+  border-bottom:1px solid var(--ink);
+  margin:0;
+}
+.section-rule-label {
+  font-family:var(--code); font-size:9px; letter-spacing:.22em; text-transform:uppercase;
+  background:var(--ink); color:var(--paper);
+  padding:6px 20px; white-space:nowrap;
+  display:flex; align-items:center; gap:8px;
+}
+.section-rule-label .ph { font-size:12px; }
+.section-rule-filler { flex:1; }
+
+/* ── SERVICES INDEX (4-col newspaper grid) ── */
+.services {
+  display:grid; grid-template-columns:repeat(4,1fr);
+  border-bottom:2px solid var(--ink);
+}
+.svc {
+  padding:32px 32px 28px;
+  border-right:1px solid var(--faint);
+  display:block; position:relative;
+  transition:background .2s;
+}
+.svc:last-child { border-right:none; }
+.svc:hover { background:#E5DFD4; }
+.svc:hover .svc-arrow { transform:translateX(5px); color:var(--amber); }
+
+.svc-index {
+  font-family:var(--code); font-size:8px; letter-spacing:.2em; text-transform:uppercase;
+  color:var(--rule); margin-bottom:20px; display:block;
+}
+.svc-icon { font-size:26px; color:var(--ink); margin-bottom:18px; display:block; transition:color .2s; }
+.svc:hover .svc-icon { color:var(--amber); }
+.svc-title {
+  font-family:var(--serif); font-size:22px; font-weight:400; line-height:1.1;
+  margin-bottom:14px; letter-spacing:-.01em;
+}
+.svc-body { font-size:12px; line-height:1.75; color:#5A4F3F; }
+.svc-arrow {
+  position:absolute; bottom:24px; right:24px;
+  font-size:16px; color:var(--faint); transition:transform .18s, color .18s;
+}
+.svc-ai { border-top:2.5px solid var(--amber); }
+.svc-new {
+  position:absolute; top:20px; right:20px;
+  font-family:var(--code); font-size:7.5px; letter-spacing:.18em; text-transform:uppercase;
+  background:var(--amber); color:var(--paper); padding:3px 8px; font-weight:600;
+}
+
+/* ── CLASSIFIEDS / STATS ── */
+.classifieds {
+  display:grid; grid-template-columns:repeat(3,1fr);
+  border-bottom:2px solid var(--ink);
+}
+.classified {
+  padding:52px 48px;
+  border-right:1px solid var(--ink);
+  text-align:center;
+  display:flex; flex-direction:column; align-items:center; gap:12px;
+}
+.classified:last-child { border-right:none; }
+.class-num {
+  font-family:var(--serif);
+  font-size:clamp(56px, 7vw, 100px);
+  font-weight:400; line-height:1; letter-spacing:-.04em;
+}
+.class-num em { font-style:normal; color:var(--amber); }
+.class-label {
+  font-family:var(--code); font-size:8.5px; letter-spacing:.24em;
+  text-transform:uppercase; color:var(--rule);
+}
+.class-rule { width:40px; height:1.5px; background:var(--faint); }
+
+/* ── FOOTER ── */
+footer {
+  border-top:3px double var(--ink);
+  padding:28px 48px;
+  display:flex; align-items:center; justify-content:space-between;
+  max-width:100%; background:var(--paper);
+}
+.f-brand { font-family:var(--serif); font-size:22px; letter-spacing:-.01em; }
+.f-brand em { font-style:italic; color:var(--amber); }
+.f-copy { font-family:var(--code); font-size:9px; letter-spacing:.1em; text-transform:uppercase; color:var(--rule); }
+.f-socials { display:flex; gap:0; }
+.f-socials a {
+  font-size:17px; color:var(--rule); padding:8px 14px;
+  border-left:1px solid var(--faint); transition:color .15s;
+}
+.f-socials a:hover { color:var(--ink); }
+
+/* ── SCROLL REVEAL ── */
+.sr { opacity:0; transform:translateY(20px); transition:opacity .65s ease, transform .65s ease; }
+.sr.on { opacity:1; transform:none; }
+
+/* ── ANIMATIONS ── */
+@keyframes ink {
+  from { opacity:0; transform:translateY(12px); }
+  to   { opacity:1; transform:none; }
+}
+.story-kicker  { animation:ink .5s .3s both; }
+.story-headline{ animation:ink .7s .4s both; }
+.story-deck    { animation:ink .6s .55s both; }
+.story-body    { animation:ink .6s .7s both; }
+.story-cta-row { animation:ink .5s .85s both; }
+.sidebar       { animation:ink .6s .5s both; }
+
+/* ── RESPONSIVE ── */
+@media(max-width:1100px){
+  .broadsheet { padding:0 28px; }
+  header { padding:0 28px; }
+  footer  { padding:24px 28px; }
+  .front-page { grid-template-columns:1fr; }
+  .col-divider { display:none; }
+  .story-main { padding-right:0; padding-bottom:40px; border-bottom:1.5px solid var(--ink); margin-bottom:32px; }
+  .story-body { column-count:1; }
+  .services { grid-template-columns:repeat(2,1fr); }
+  .svc:nth-child(2){ border-right:none; }
+  .svc:nth-child(3){ border-top:1px solid var(--faint); border-right:1px solid var(--faint); }
+  .svc:nth-child(4){ border-top:1px solid var(--faint); border-right:none; }
+  .classifieds { grid-template-columns:1fr; }
+  .classified { border-right:none; border-bottom:1px solid var(--ink); padding:36px; }
+  .classified:last-child { border-bottom:none; }
+  .mast-nav-links { display:none; }
+  .mast-nav-auth  { display:none; }
+  .mob-burger { display:flex; }
+}
+@media(max-width:640px){
+  .mast-top { display:none; }
+  .nameplate-name { font-size:clamp(40px,14vw,64px); }
+  .services { grid-template-columns:1fr; }
+  .svc { border-right:none; border-bottom:1px solid var(--faint); }
+  .svc:nth-child(3){ border-top:none; }
+  .svc:nth-child(4){ border-top:none; }
+  footer { flex-direction:column; gap:16px; text-align:center; }
+  .f-socials a:first-child { border-left:none; }
+  .dateline { font-size:8px; gap:8px; }
+}
+</style>
 </head>
+<body>
 
-<body class="antialiased relative overflow-x-hidden">
+<div id="cur"></div>
 
-  <nav class="fixed w-full z-50 glass-nav">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between h-20 items-center">
-        <a href="index.html" class="flex items-center gap-2 cursor-pointer">
-          <i class="ph-fill ph-scales text-3xl text-lawBlue"></i>
-          <span class="text-2xl font-bold tracking-tight">Lawinate<span class="text-lawBlue">.uz</span></span>
-        </a>
+<!-- MOBILE MENU -->
+<div id="mob-menu">
+  <a href="reyting.html">Reyting</a>
+  <a href="kutubxona.html">Kutubxona</a>
+  <a href="testlar.html">Testlar</a>
+  <a href="community.html">Community</a>
+  <a href="aiassist.html" class="m-ai">AI Assistant</a>
+  <button class="m-cta" onclick="location.href='auth.html'">Ro'yxatdan o'tish →</button>
+</div>
 
-        <div class="hidden md:flex items-center space-x-6 text-sm font-medium text-gray-300">
-          <a href="reyting.html" class="hover:text-white transition">Reyting</a>
-          <a href="kutubxona.html" class="hover:text-white transition">Kutubxona</a>
-          <a href="testlar.html" class="hover:text-white transition">Testlar</a>
-          <a href="community.html" class="hover:text-white transition">Community</a>
-
-          <a href="aiassist.html"
-            class="text-lawBlue font-bold hover:text-white transition flex items-center gap-1 border border-lawBlue/30 px-3 py-1.5 rounded-full bg-lawBlue/10 hover:bg-lawBlue/20">
-            <i class="ph-bold ph-sparkle"></i> AI Assistant
-          </a>
-        </div>
-
-        <div class="hidden md:flex gap-4">
-          <a href="auth.html"
-            class="text-sm font-medium hover:text-white text-gray-300 transition flex items-center">Kirish</a>
-          <a href="auth.html"
-            class="bg-lawBlue hover:bg-blue-600 text-white px-5 py-2 rounded-full text-sm font-semibold transition shadow-[0_0_20px_rgba(0,102,255,0.3)]">
-            Ro'yxatdan o'tish
-          </a>
-        </div>
-
-        <div class="md:hidden">
-          <input type="checkbox" id="mobile-menu-toggle" class="hidden peer">
-          <label for="mobile-menu-toggle" class="cursor-pointer relative z-50">
-            <i class="ph-bold ph-list text-2xl text-white transition-opacity duration-300 peer-checked:opacity-0"></i>
-            <i
-              class="ph-bold ph-x text-2xl text-white transition-opacity duration-300 opacity-0 peer-checked:opacity-100 absolute top-0 left-0"></i>
-          </label>
-        </div>
-      </div>
+<!-- ═══ MASTHEAD ═══════════════════════════════════════════ -->
+<header>
+  <div class="mast-top">
+    <div class="mast-top-left">
+      <span>Lawinate.uz</span>
+      <span>O'zbekiston</span>
+      <span>Yuridik ta'lim</span>
     </div>
-  </nav>
-
-  <div id="mobile-menu"
-    class="fixed top-0 left-0 w-full h-screen bg-lawDark/95 backdrop-blur-xl md:hidden transform -translate-y-full transition-transform duration-500 ease-in-out z-40 flex items-center">
-    <div class="max-w-7xl mx-auto px-4 py-6 text-center">
-      <div class="flex flex-col space-y-6 text-xl font-bold">
-        <a href="reyting.html" class="text-gray-300 hover:text-white transition">Reyting</a>
-        <a href="kutubxona.html" class="text-gray-300 hover:text-white transition">Kutubxona</a>
-        <a href="testlar.html" class="text-gray-300 hover:text-white transition">Testlar</a>
-        <a href="community.html" class="text-gray-300 hover:text-white transition">Community</a>
-
-        <a href="aiassist.html" class="text-lawBlue flex items-center justify-center gap-2">
-          <i class="ph-bold ph-sparkle"></i> AI Assistant
-        </a>
-
-        <div class="border-t border-gray-700 pt-8 mt-4 flex flex-col gap-4">
-          <a href="auth.html" class="text-gray-300 hover:text-white transition">Kirish</a>
-          <a href="auth.html"
-            class="bg-lawBlue hover:bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold transition">
-            Ro'yxatdan o'tish
-          </a>
-        </div>
-      </div>
+    <div class="mast-top-right">
+      <span class="mast-live"><span class="live-dot"></span> Platforma faol</span>
+      <span>5,000+ foydalanuvchi</span>
     </div>
   </div>
 
-  <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-      <a href="aiassist.html"
-        class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card mb-8 border border-blue-900/30 hover:scale-[1.01] transition">
-        <span class="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
-        <span class="text-xs font-medium text-blue-200">Yangi: AI Yordamchi ishga tushdi</span>
-      </a>
+  <div class="nameplate">
+    <div class="nameplate-name">Lawin<em>ate</em></div>
+    <div class="nameplate-rule">O'zbekiston yuridik ta'lim gazetasi</div>
+  </div>
 
-      <h1 class="text-5xl md:text-7xl font-black tracking-tight mb-6 leading-tight">
-        Huquqiy bilimlaringizni <br>
-        <span class="text-gradient">Yangi darajaga</span> olib chiqing
+  <div class="mast-nav">
+    <ul class="mast-nav-links">
+      <a href="reyting.html">Reyting</a>
+      <a href="kutubxona.html">Kutubxona</a>
+      <a href="testlar.html">Testlar</a>
+      <a href="community.html">Community</a>
+      <a href="aiassist.html" class="ai-link"><i class="ph-bold ph-sparkle"></i> AI Assistant</a>
+    </ul>
+    <div class="mast-nav-auth">
+      <a href="auth.html" class="auth-in">Kirish</a>
+      <a href="auth.html" class="auth-reg">Ro'yxatdan o'tish →</a>
+    </div>
+    <button class="mob-burger" id="mob-btn" aria-label="Menyu">
+      <i class="ph-bold ph-list" id="mob-icon"></i>
+    </button>
+  </div>
+</header>
+
+<!-- ═══ BROADSHEET ════════════════════════════════════════ -->
+<div class="broadsheet">
+
+  <!-- dateline -->
+  <div class="dateline">
+    <span>Toshkent, O'zbekiston · 2025-yil</span>
+    <span class="dateline-badge"><i class="ph-bold ph-sparkle"></i> AI Yordamchi yangilandi</span>
+    <span>Vol. I · 1-son</span>
+  </div>
+
+  <!-- FRONT PAGE -->
+  <div class="front-page">
+
+    <!-- Main story -->
+    <div class="story-main">
+      <div class="story-kicker">Tahririyatdan</div>
+      <h1 class="story-headline">
+        Huquqiy bilimlaringizni<br>
+        <em>Yangi darajaga</em><br>
+        olib chiqing
       </h1>
-
-      <p class="text-lg md:text-xl text-gray-400 mb-10 max-w-2xl mx-auto">
+      <p class="story-deck">
         Abituriyentlar va talabalar uchun #1 raqamli platforma.
-        Reytingda bellashing, elektron kutubxonadan foydalaning va professional yurist bo'ling.
+        Reytingda bellashing va professional yurist bo'ling.
       </p>
-
-      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-        <a href="huquqni-muhofaza-qiluvchi-organlar-imtixon-id3345.html"
-          class="w-full sm:w-auto bg-white text-black px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-200 transition flex items-center justify-center gap-2">
+      <div class="story-body">
+        <p class="drop-cap">O'zbekiston yuridik ta'lim tizimida yangi davr boshlandi. Lawinate platformasi orqali har bir talaba, abituriyent va yurist mutaxassisi huquq sohasidagi bilimlarini sinab ko'rish, chuqurlashtirish va hamjamiyat bilan bo'lishish imkoniyatiga ega bo'ladi.</p>
+        <p>Konstitutsiya, jinoyat, fuqarolik, mehnat va xalqaro huquq sohalari bo'yicha maxsus tayyorlangan testlar, 120 dan ortiq elektron kitob va AI yordamchi — barchasi bitta platformada to'plangan.</p>
+        <p>DTM standartidagi savol-javoblar, universitetlarga kirish ballari tahlili va real vaqtda yangilanuvchi reyting tizimi — maqsadingizga erishishda ishonchli hamroh.</p>
+      </div>
+      <div class="story-cta-row">
+        <a href="huquqni-muhofaza-qiluvchi-organlar-imtixon-id3345.html" class="cta-primary">
           Boshlash <i class="ph-bold ph-arrow-right"></i>
         </a>
-
-        <button
-          class="w-full sm:w-auto glass-card px-8 py-4 rounded-full font-bold text-lg hover:bg-white/5 transition flex items-center justify-center gap-2">
+        <button class="cta-ghost">
           <i class="ph-bold ph-download-simple"></i> Ilovani yuklash
         </button>
       </div>
     </div>
 
-    <div
-      class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-blue-600/10 rounded-full blur-[120px] -z-10">
-    </div>
-  </section>
+    <div class="col-divider"></div>
 
-  <section class="py-20 relative">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-16">
-        <h2 class="text-3xl font-bold mb-4">Siz uchun imkoniyatlar</h2>
-        <p class="text-gray-400">Lawinate shunchaki sayt emas, bu — tizim.</p>
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- stats box -->
+      <div class="sidebar-stats">
+        <div class="sidebar-stats-head">Platforma ko'rsatkichlari</div>
+        <div class="stat-item">
+          <span class="stat-label">Foydalanuvchilar</span>
+          <span class="stat-value">5,000<em>+</em></span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Kutubxona</span>
+          <span class="stat-value">120<em>+</em></span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Daraja</span>
+          <span class="stat-value">TOP<em>#1</em></span>
+        </div>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-
-        <a href="reyting.html" class="glass-card p-8 rounded-3xl relative group cursor-pointer">
-          <div class="w-12 h-12 bg-blue-600/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-blue-600 transition">
-            <i class="ph-fill ph-trophy text-2xl text-blue-400 group-hover:text-white"></i>
-          </div>
-          <h3 class="text-xl font-bold mb-3">Live Reyting</h3>
-          <p class="text-sm text-gray-400 leading-relaxed">
-            Boshqa talabalar bilan bellashing. Ball to'plang va O'zbekiston bo'yicha TOP-100 ro'yxatga kiring.
-          </p>
-        </a>
-
-        <a href="kutubxona.html" class="glass-card p-8 rounded-3xl relative group cursor-pointer">
-          <div class="w-12 h-12 bg-purple-600/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-purple-600 transition">
-            <i class="ph-fill ph-books text-2xl text-purple-400 group-hover:text-white"></i>
-          </div>
-          <h3 class="text-xl font-bold mb-3">Smart Kutubxona</h3>
-          <p class="text-sm text-gray-400 leading-relaxed">
-            Minglab huquqiy adabiyotlar va kodekslar. Qidiruv va yuklab olish — mutlaqo tekin.
-          </p>
-        </a>
-
-        <a href="testlar.html" class="glass-card p-8 rounded-3xl relative group cursor-pointer">
-          <div class="w-12 h-12 bg-green-600/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-green-600 transition">
-            <i class="ph-fill ph-student text-2xl text-green-400 group-hover:text-white"></i>
-          </div>
-          <h3 class="text-xl font-bold mb-3">Abituriyentlar</h3>
-          <p class="text-sm text-gray-400 leading-relaxed">
-            DTM standartidagi testlar, video darslar va Universitetlarga kirish ballari tahlili.
-          </p>
-        </a>
-
-        <a href="aiassist.html" class="glass-card p-8 rounded-3xl relative group cursor-pointer border-lawBlue/40 bg-gradient-to-br from-lawCard to-blue-900/10">
-          <div class="w-12 h-12 bg-cyan-600/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-cyan-600 transition shadow-[0_0_15px_rgba(0,255,255,0.3)]">
-            <i class="ph-fill ph-sparkle text-2xl text-cyan-400 group-hover:text-white"></i>
-          </div>
-          <h3 class="text-xl font-bold mb-3 text-white">AI Advokat</h3>
-          <p class="text-sm text-gray-400 leading-relaxed">
-            Sun'iy intelekt yordamida har qanday huquqiy savolga soniyalar ichida javob oling.
-          </p>
-          <span class="absolute top-4 right-4 bg-lawBlue text-[10px] font-bold px-2 py-1 rounded-full animate-bounce">YANGI</span>
-        </a>
-
+      <!-- sidebar news items -->
+      <div class="sidebar-item">
+        <div class="si-num">01 · Reyting</div>
+        <h3 class="si-head">Live Reyting — <em>TOP 100</em></h3>
+        <p class="si-body">O'zbekiston bo'yicha eng yaxshi talabalar ro'yxatiga kiring. Ball to'plang, raqobatlashing.</p>
+        <a href="reyting.html" class="si-link">Ko'rish <i class="ph-bold ph-arrow-right"></i></a>
+      </div>
+      <div class="sidebar-item">
+        <div class="si-num">02 · Kutubxona</div>
+        <h3 class="si-head"><em>Smart</em> Kutubxona</h3>
+        <p class="si-body">Minglab huquqiy adabiyotlar va kodekslar. Qidiruv va yuklab olish — tekin.</p>
+        <a href="kutubxona.html" class="si-link">Ko'rish <i class="ph-bold ph-arrow-right"></i></a>
+      </div>
+      <div class="sidebar-item">
+        <div class="si-num">03 · AI · Yangi</div>
+        <h3 class="si-head">AI <em>Advokat</em></h3>
+        <p class="si-body">Har qanday huquqiy savolga soniyalar ichida javob oling.</p>
+        <a href="aiassist.html" class="si-link">Ko'rish <i class="ph-bold ph-arrow-right"></i></a>
       </div>
     </div>
-  </section>
+  </div>
 
-  <section class="py-20 border-t border-white/5">
-    <div class="max-w-7xl mx-auto px-4 flex flex-wrap justify-around text-center gap-8">
-      <div>
-        <h4 class="text-4xl font-bold text-white mb-1">5,000+</h4>
-        <p class="text-sm text-gray-500 uppercase tracking-wider">Foydalanuvchilar</p>
-      </div>
-      <div>
-        <h4 class="text-4xl font-bold text-white mb-1">120+</h4>
-        <p class="text-sm text-gray-500 uppercase tracking-wider">Kitoblar</p>
-      </div>
-      <div>
-        <h4 class="text-4xl font-bold text-white mb-1">TOP #1</h4>
-        <p class="text-sm text-gray-500 uppercase tracking-wider">Huquqiy platforma</p>
-      </div>
+  <!-- SECTION RULE -->
+  <div class="section-rule sr">
+    <span class="section-rule-label"><i class="ph-bold ph-squares-four"></i> Barcha xizmatlar</span>
+    <span class="section-rule-filler"></span>
+  </div>
+
+  <!-- SERVICES -->
+  <div class="services sr">
+    <a href="reyting.html" class="svc">
+      <span class="svc-index">01 · Reyting</span>
+      <i class="ph-fill ph-trophy svc-icon"></i>
+      <h3 class="svc-title">Live Reyting</h3>
+      <p class="svc-body">Boshqa talabalar bilan bellashing. Ball to'plang va O'zbekiston bo'yicha TOP-100 ro'yxatga kiring.</p>
+      <i class="ph-bold ph-arrow-right svc-arrow"></i>
+    </a>
+    <a href="kutubxona.html" class="svc">
+      <span class="svc-index">02 · Kutubxona</span>
+      <i class="ph-fill ph-books svc-icon"></i>
+      <h3 class="svc-title">Smart Kutubxona</h3>
+      <p class="svc-body">Minglab huquqiy adabiyotlar va kodekslar. Qidiruv va yuklab olish — mutlaqo tekin.</p>
+      <i class="ph-bold ph-arrow-right svc-arrow"></i>
+    </a>
+    <a href="testlar.html" class="svc">
+      <span class="svc-index">03 · Testlar</span>
+      <i class="ph-fill ph-student svc-icon"></i>
+      <h3 class="svc-title">Abituriyentlar</h3>
+      <p class="svc-body">DTM standartidagi testlar, video darslar va universitetlarga kirish ballari tahlili.</p>
+      <i class="ph-bold ph-arrow-right svc-arrow"></i>
+    </a>
+    <a href="aiassist.html" class="svc svc-ai">
+      <span class="svc-new">Yangi</span>
+      <span class="svc-index">04 · AI</span>
+      <i class="ph-fill ph-sparkle svc-icon" style="color:var(--amber)"></i>
+      <h3 class="svc-title">AI Advokat</h3>
+      <p class="svc-body">Sun'iy intellekt yordamida har qanday huquqiy savolga soniyalar ichida javob oling.</p>
+      <i class="ph-bold ph-arrow-right svc-arrow"></i>
+    </a>
+  </div>
+
+  <!-- CLASSIFIEDS / STATS -->
+  <div class="classifieds sr">
+    <div class="classified">
+      <span class="class-rule"></span>
+      <div class="class-num">5,000<em>+</em></div>
+      <span class="class-label">Foydalanuvchilar</span>
+      <span class="class-rule"></span>
     </div>
-  </section>
-
-  <footer class="py-12 border-t border-white/5 bg-black">
-    <div class="max-w-7xl mx-auto px-4 text-center">
-      <div class="flex items-center justify-center gap-2 mb-6">
-        <i class="ph-fill ph-scales text-2xl text-lawBlue"></i>
-        <span class="text-xl font-bold">Lawinate.uz</span>
-      </div>
-      <p class="text-gray-500 text-sm mb-8">© 2026 Lawinate Digital. Barcha huquqlar himoyalangan.</p>
-      <div class="flex justify-center gap-6 text-gray-400">
-        <a href="#" class="hover:text-white transition"><i class="ph-fill ph-telegram-logo text-xl"></i></a>
-        <a href="#" class="hover:text-white transition"><i class="ph-fill ph-instagram-logo text-xl"></i></a>
-        <a href="#" class="hover:text-white transition"><i class="ph-fill ph-linkedin-logo text-xl"></i></a>
-      </div>
+    <div class="classified">
+      <span class="class-rule"></span>
+      <div class="class-num">120<em>+</em></div>
+      <span class="class-label">Kitoblar</span>
+      <span class="class-rule"></span>
     </div>
-  </footer>
+    <div class="classified">
+      <span class="class-rule"></span>
+      <div class="class-num">TOP<em>#1</em></div>
+      <span class="class-label">Huquqiy platforma</span>
+      <span class="class-rule"></span>
+    </div>
+  </div>
 
-  <script>
-    const toggle = document.getElementById('mobile-menu-toggle');
-    const menu = document.getElementById('mobile-menu');
-    if (toggle && menu) {
-      toggle.addEventListener('change', () => {
-        if (toggle.checked) {
-          menu.classList.remove('-translate-y-full');
-          menu.classList.add('translate-y-0');
-          document.body.style.overflow = 'hidden';
-        } else {
-          menu.classList.add('-translate-y-full');
-          menu.classList.remove('translate-y-0');
-          document.body.style.overflow = 'auto';
-        }
-      });
-    }
-  </script>
+</div><!-- /broadsheet -->
 
+<!-- FOOTER -->
+<footer>
+  <div>
+    <div class="f-brand">Lawin<em>ate</em>.uz</div>
+  </div>
+  <span class="f-copy">© 2026 Lawinate Digital. Barcha huquqlar himoyalangan.</span>
+  <div class="f-socials">
+    <a href="#" aria-label="Telegram"><i class="ph-fill ph-telegram-logo"></i></a>
+    <a href="#" aria-label="Instagram"><i class="ph-fill ph-instagram-logo"></i></a>
+    <a href="#" aria-label="LinkedIn"><i class="ph-fill ph-linkedin-logo"></i></a>
+  </div>
+</footer>
+
+<script>
+  /* cursor */
+  const cur = document.getElementById('cur');
+  document.addEventListener('mousemove', e => {
+    cur.style.left = e.clientX + 'px';
+    cur.style.top  = e.clientY + 'px';
+  });
+  document.querySelectorAll('a, button').forEach(el => {
+    el.addEventListener('mouseenter', () => cur.classList.add('fill'));
+    el.addEventListener('mouseleave', () => cur.classList.remove('fill'));
+  });
+
+  /* mobile menu */
+  const btn  = document.getElementById('mob-btn');
+  const menu = document.getElementById('mob-menu');
+  const icon = document.getElementById('mob-icon');
+  let open = false;
+  btn.addEventListener('click', () => {
+    open = !open;
+    menu.style.display = open ? 'flex' : 'none';
+    requestAnimationFrame(() => menu.classList.toggle('open', open));
+    icon.className = open ? 'ph-bold ph-x' : 'ph-bold ph-list';
+    document.body.style.overflow = open ? 'hidden' : '';
+  });
+  menu.querySelectorAll('a, button').forEach(el => {
+    el.addEventListener('click', () => {
+      open = false;
+      menu.classList.remove('open');
+      setTimeout(() => { menu.style.display = 'none'; }, 550);
+      icon.className = 'ph-bold ph-list';
+      document.body.style.overflow = '';
+    });
+  });
+
+  /* scroll reveal */
+  const io = new IntersectionObserver(
+    es => es.forEach(e => { if (e.isIntersecting) e.target.classList.add('on'); }),
+    { threshold: 0.06 }
+  );
+  document.querySelectorAll('.sr').forEach(el => io.observe(el));
+</script>
 </body>
 </html>
